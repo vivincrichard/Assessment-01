@@ -10,7 +10,7 @@ ChartJS.register(
     Legend
 );
 
-const LineChartsTsx = () => {
+const Lines = () => {
     const data = {
         labels: ['0', 'Week 1', 'Week 2', 'Week 3', 'Week 4','Week 5'],
         datasets: [
@@ -18,7 +18,7 @@ const LineChartsTsx = () => {
                 label: 'Guest',
                 data: [200, 390, 200, 300, 210, 450],
                 borderColor: '#E9A0A0',
-                tension: 0.4
+                tension: 0.3
             },
             {
                 label: 'User',
@@ -50,12 +50,17 @@ const LineChartsTsx = () => {
         }
     };
 
-    return
-
-
-    <div  style={{width: '100px', height: '70px'}}>
-        <Line data={data} options={options}/>
-    </div>
+    return(
+        <div style={
+            {
+                display: 'flex',
+                width: '1000px',
+                height: '650%'
+            }
+        }>
+            <Line data={data} options={options}/>
+        </div>
+    )
 };
 
-export default LineChartsTsx;
+export default Lines;
