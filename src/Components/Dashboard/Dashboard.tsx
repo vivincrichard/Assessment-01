@@ -40,34 +40,28 @@ const initialSchedule = [
     }
 ];
 
+const navBars = [
+    {img: dash, lable: 'Dashboard'},
+    {img: tran, lable: 'Transaction'},
+    {img:sch, lable: 'Schedules'},
+    {img:us, lable: 'Users'},
+    {img:setting, lable: 'Settings'}
+]
+
 function Dashboard() {
     const [schedule, setSchedule] = useState(initialSchedule);
     return (
         <div className='container'>
             <nav className='nav-bar'>
                 <h1>Board.</h1>
-                    <ul className='ul-top'>
-                        <li>
-                            <img src={dash} className='dash-icon'/>
-                            Dashboard
-                        </li>
-                        <li>
-                            <img src={tran} className='dash-icon'/>
-                            Transaction
-                        </li>
-                        <li>
-                            <img src={sch} className='dash-icon'/>
-                            Schedules
-                        </li>
-                        <li>
-                            <img src={us} className='dash-icon'/>
-                            User
-                        </li>
-                        <li>
-                            <img src={setting} className='dash-icon'/>
-                            Settings
-                        </li>
-                    </ul>
+                <ul className='ul-top'>
+                        {navBars.map((item, index) => (
+                            <li key={index}>
+                                <img src={item.img} className='dash-icon' alt={item.lable}/>
+                                {item.lable}
+                            </li>
+                        ))}
+                </ul>
                 <div className='ul-bottom'>
                     <ul>
                         <li>Help</li>
