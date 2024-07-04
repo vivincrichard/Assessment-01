@@ -37,15 +37,15 @@ function SignIn() {
             <div className={'right-container'}>
                 <div className={'form'}>
                     <h1>Sign In</h1>
-                    <span className={'info'}>Sign in to your account</span><br/>
+                    <span className={'info'}>Sign in to your account</span>
                     <div className={'two-btn'}>
                         <button className={'google-btn'}>
                             <img className={'img'} src={google} alt="logo"/>
-                            <span>Sign in with Google</span>
+                            <span className='text'>Sign in with Google</span>
                         </button>
                         <button className={'apple-btn'}>
                             <img className={'img'} src={apple} alt={'apple'}/>
-                            <span>Sign in with Apple</span>
+                            <span className='text'>Sign in with Apple</span>
                         </button>
                     </div>
                     <form className={'field'} onSubmit={handleSubmit(onSubmit)}>
