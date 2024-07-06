@@ -28,7 +28,7 @@ li {
 }
 
 
-.ul-top li {
+.auto-list {
     font-size: 20px;
     color: white;
     line-height: 60px;
@@ -36,7 +36,7 @@ li {
     cursor: pointer;
 }
 
-/*how to align in bottom*/
+/* doubt: how to align in bottom*/
 .ul-bottom {
     color: white;
     font-size: 5px;

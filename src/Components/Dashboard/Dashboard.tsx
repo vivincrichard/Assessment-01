@@ -56,7 +56,7 @@ function Dashboard() {
                 <h1>Board.</h1>
                 <ul className='ul-top'>
                         {navBars.map((item, index) => (
-                            <li key={index}>
+                            <li key={index} className='auto-list'>
                                 <img src={item.img} className='dash-icon' alt={item.lable}/>
                                 {item.lable}
                             </li>
